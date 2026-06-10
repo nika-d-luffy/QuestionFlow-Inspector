@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "JSON Inspector",
+  "version": "1.0",
+  "description": "Intercepts JSON API responses and shows a floating overlay.",
+  "permissions": ["scripting", "webRequest", "storage"],
+  "host_permissions": ["<all_urls>"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_start",
+      "world": "MAIN",
+      "all_frames": true
+    }
+  ],
+  "action": {
+    "default_title": "JSON Inspector"
+  }
+}
