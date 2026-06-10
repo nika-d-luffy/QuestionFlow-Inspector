@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "JSON Inspector",
+  "name": "QuestionFlow Inspector",
   "version": "1.0",
   "description": "Intercepts JSON API responses and shows a floating overlay.",
   "permissions": ["scripting", "webRequest", "storage"],
@@ -18,6 +18,6 @@
     }
   ],
   "action": {
-    "default_title": "JSON Inspector"
+    "default_title": "QuestionFlow Inspector"
   }
 }
